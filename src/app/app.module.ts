@@ -10,6 +10,7 @@ import { Tab01MasterhaComponent } from './tab01-masterha/tab01-masterha.componen
 import { Tab02MasterhaComponent } from './tab02-masterha/tab02-masterha.component';
 import { Tab03MasterhaComponent } from './tab03-masterha/tab03-masterha.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { ServiceMasterhaService } from './service-masterha.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
   ],
   providers: [
     provideClientHydration(),
-    provideAnimationsAsync()
+    provideAnimationsAsync(),
+    ServiceMasterhaService
   ],
   bootstrap: [AppComponent]
 })
