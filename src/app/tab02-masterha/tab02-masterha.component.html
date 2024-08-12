@@ -1,1 +1,18 @@
 <h3>{{masterhaS2024.masterhaName}} / {{masterhaS2024.masterhaID}} / {{masterhaS2024.masterhaLogin}} / {{masterhaS2024.masterhaEmail}}</h3>
+
+<h4>Tab02 Scenario for Final Exam Summer 2024</h4>
+
+<form [formGroup]="masterhaForm" (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill">
+        <mat-label>Enter term month for {{masterhaS2024.masterhaName}}</mat-label>
+        <input matInput formControlName="masterhamonth66464" placeholder="Enter term month">
+    </mat-form-field>
+    
+      <mat-form-field appearance="fill">
+        <mat-label>Enter term year for {{masterhaS2024.masterhaName}}</mat-label>
+        <input matInput formControlName="masterhayear66464" placeholder="Enter term year">
+    </mat-form-field>
+
+    <button mat-raised-button type="submit">Submit</button>
+
+</form>
