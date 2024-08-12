@@ -10,4 +10,11 @@ import { Classmasterha } from '../app.component';
 export class Tab03MasterhaComponent {
   @Input() masterhaS2024!: Classmasterha;
 
+  masterhaArray: string[] = [
+    'DOW: Monday',
+    'Time: 12-3',
+    'Room: M4'
+  ];
+
+  
 }

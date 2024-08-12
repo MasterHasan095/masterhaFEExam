@@ -1,1 +1,7 @@
 <h3>{{masterhaS2024.masterhaName}} / {{masterhaS2024.masterhaID}} / {{masterhaS2024.masterhaLogin}} / {{masterhaS2024.masterhaEmail}}</h3>
+
+<h4>Tab 3 Scenario / Class info for 66464 / {{masterhaS2024.masterhaLogin}}</h4>
+
+<p *ngFor="let item of masterhaArray" [ngStyle]="{ 'font-style': 'italic', 'color': 'red' }">
+    {{item}}
+</p>
